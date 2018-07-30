@@ -15,7 +15,7 @@
 		<?php if($ads_images && isset($ads_images)): foreach($ads_images as $ads): ?>
 		<div class="ads sidebar_padding">
 			<?php $image = base_url().$ads->image_path; if(!@getimagesize($image)){ $image = base_url().'libs/upload_pic/no_image_available.jpeg' ;  }?>
-			<img class="img-fluid" src="<?= $image;?>" alt="<?= $ads->a_title; ?>" style="width: 100%; border-radius: 5px;">
+			<img class="img-fluid" src="<?= $image;?>" alt="<?= $ads->a_title; ?>" style="width: 100%; border-radius: 5px; height: 250px;">
 		</div>
 		<?php endforeach; endif;?>
 	</div>

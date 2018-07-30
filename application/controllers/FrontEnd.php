@@ -14,13 +14,13 @@ class FrontEnd extends CI_Controller {
 		$vars['address'] 	= $this->Page_model->get_address_info();
 		$vars['categories'] = $this->Category_model->get_all_category_info();
 		$vars['sliders']	= $this->Slider_model->get_all_slider_data();
-		$vars['ads_images']	= $this->Ads_model->get_all_ads_data();
+		$vars['ads_images']	= $this->Ads_model->frontend_ads();
 		$vars['md_name']	= $this->Template_model->get_md_name_data(); 
 		$vars['md_desig']	= $this->Template_model->get_md_desig_data(); 
 		$vars['md_image']	= $this->Template_model->get_md_image_data(); 
 		$vars['md_message']	= $this->Template_model->get_md_message_data();
 		$vars['photos']		= $this->Page_model->get_images_for_right_sidebar();
-		$vars['y_videos']	= $this->Page_model->get_limt_video(6); 
+		$vars['y_videos']	= $this->Page_model->get_limt_video(3); 
 		$this->load->vars( $vars);
 	}
 

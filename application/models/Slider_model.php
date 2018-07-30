@@ -19,7 +19,7 @@ Class Slider_model extends CI_Model{
 		$file_path = $this->image_upload($imageName, $tmp_name);
 		$this->image_resize($file_path);
 		$attr = [
-			's_title' => 'Slider Image',
+			's_title' => $this->input->post('s_title'),
 			'image' =>$file_path
 		];
 		$insert = $this->db->insert('sliders', $attr);

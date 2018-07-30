@@ -13,7 +13,7 @@
 			<?php $image = $slider->image; if(!@getimagesize($image)){ $image = base_url().'libs/upload_pic/no_image_available.jpeg' ;  }?>
 			<img class="d-block w-100" src="<?= $image;?>" alt="<?= ucfirst($slider->s_title)?>">
 			<div class="carousel-caption d-md-block">
-				<!-- <h1 class="wow fadeInDown heading" data-wow-delay=".4s"><?= ucfirst($slider->s_title)?></h1>	 -->
+				<h1 class="" data-wow-delay=".4s" style="padding: 15px; font-size: 22px!important; background-color: #0080007a; border-radius: 3px; "><sapn style=" color: #fff!important;"><?= ucfirst($slider->s_title)?></sapn></h1>	
 			</div>
 		</div>
 		<?php endforeach;?>

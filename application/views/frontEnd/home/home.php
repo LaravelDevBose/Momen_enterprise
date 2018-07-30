@@ -3,7 +3,7 @@
 		<div class="blog-post single-post">
 
 			<div class="content">
-				<h2 class="text-center">Well Come To Momen Enterprise</h2>
+				<h2 class="text-center">WelCome To Momen Enterprise</h2>
 				
 				<p class="mb-2"><?php if($wc_note && isset($wc_note)){ echo ucfirst($wc_note->value); }?></p>
 				

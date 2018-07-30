@@ -39,7 +39,7 @@
 		</ul>
 	</div>
 	<div class="inner-box property-dsc">
-		<h2 class="desc-title">Property Description</h2>
+		<h2 class="desc-title">Product Description</h2>
 		<p><?= $product->details; ?></p>
 	</div>
 	

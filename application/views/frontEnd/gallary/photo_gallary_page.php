@@ -4,18 +4,19 @@
 			<?php 
 				if($images && isset($images)){ 
 					foreach($images as $image){
-						$image = base_url().$image->image;
-						if(@getimagesize($image)){
+						$g_image = base_url().$image->image;
+						if(@getimagesize($g_image)){
 			?>
 			<div class="col-md-6 col-sm-6 col-lg-6 paginate mix development print ">
 				<div class="portfolio-box">
 					<div class="img-thumb">
-						<img class="img-fluid" src="<?= $image;?>" alt="" style="height: 200px;">
+						<img class="img-fluid" src="<?= $g_image;?>" alt="" style="height: 200px;">
 					</div>
 					<div class="overlay-box text-center">
-						<a class="lightbox" href="<?= $image;?>">
+						<a class="lightbox" href="<?= $g_image;?>">
 							<i class="lni-zoom-in"></i>
 						</a>
+							<h3><?= $image->g_title; ?></h3>
 						
 					</div>
 				</div>

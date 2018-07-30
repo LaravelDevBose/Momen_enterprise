@@ -43,7 +43,7 @@ $route['brand/update'] = 'Brand/update';
 $route['category'] = 'Category/index';
 $route['category/store'] = 'Category/store';
 $route['category/edit/(:any)'] = 'Category/edit/$1';
-$route['category/update'] = 'Category/update';
+$route['category_name/update'] = 'Category/update';
 
 /* ------- Products Route --------*/
 $route['products'] = 'Product/index';

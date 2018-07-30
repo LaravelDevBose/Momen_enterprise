@@ -8,6 +8,11 @@ Class Ads_model extends CI_Model{
 		return $this->db->get('ads')->result();
 	}
 
+
+	public function frontend_ads()
+	{
+		return $this->db->order_by('id', 'desc')->limit(3)->get('ads')->result();
+	}
 	
 
 	/*========== Sotre Ads Data========= */

@@ -18,9 +18,11 @@
 					<p class="md-des"><?= ucfirst($md_desig->value); ?></p>
 				</div>
 				<div style="clear: both; padding-top: 10px;">
-					<p class="card-text"><?php if($md_message && isset($md_message)){echo substr($md_message->value, 0, 150); }?></p>
+					<p class="card-text"><?php if($md_message && isset($md_message)){echo substr($md_message->value, 0, 350); }?>
+						
+					</p>
 				</div>
-				
+				<a href="<?= base_url(); ?>md_message" style="float: right;">Read More</a>
 			</div>
 		</div>
 	</div>
@@ -35,8 +37,11 @@
 					<?php $image = base_url().$photo->image; if(!@getimagesize($image)){ $image = base_url().'libs/upload_pic/no_image_available.jpeg' ;  } ?>
 				<div style="width: 50%; float: left;">
 					<div style="margin: auto; padding: 6px;">
-						<img style="width: 100%; height: 70px;  border: 3px solid green; border-radius: 3px;" src="<?= $image;?>" >
+						<a class="lightbox" href="<?= $image;?>" title="<?= $photo->g_title; ?>">
+							<img style="width: 100%; height: 70px;  border: 3px solid green; border-radius: 3px;" src="<?= $image;?>" >
+						</a> 
 					</div>
+					
 				</div>
 
 				<?php endforeach; endif;?>

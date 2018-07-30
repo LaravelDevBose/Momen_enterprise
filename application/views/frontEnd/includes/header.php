@@ -47,7 +47,7 @@
 					
 				</a>
 			</div>
-			<div class="collapse navbar-collapse" id="main-navbar" style="padding-left: 20px!important;">
+			<div class="collapse navbar-collapse" id="main-navbar" style="padding-left: 60px!important;">
 				<ul class="navbar-nav  justify-content-center" >
 					<li class="nav-item <?= ($this->uri->uri_string() == '')?'active': '' ?>">
 						<a class="nav-link" href="<?= base_url();?>">

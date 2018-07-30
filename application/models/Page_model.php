@@ -194,7 +194,7 @@ Class Page_model extends CI_Model{
 	//======= Get all gallery images
 	public function get_all_gallery_images()
 	{
-		$result = $this->db->get('gallerys')->result();
+		$result = $this->db->order_by('id', 'desc')->get('gallerys')->result();
 
 		if($result): return $result; else: return FALSE; endif;
 	}
@@ -202,7 +202,7 @@ Class Page_model extends CI_Model{
 	//======= Get all gallery images
 	public function get_images_for_right_sidebar()
 	{
-		$result = $this->db->limit(6)->get('gallerys')->result();
+		$result = $this->db->order_by('id', 'desc')->limit(6)->get('gallerys')->result();
 
 		if($result): return $result; else: return FALSE; endif;
 	}
@@ -218,7 +218,7 @@ Class Page_model extends CI_Model{
 		$file_path = $this->image_upload($imageName, $tmp_name);
 		$this->image_resize($file_path);
 		$attr = [
-			'g_title' => 'Gallery Image',
+			'g_title' => $this->input->post('g_title'),
 			'image' =>$file_path
 		];
 		$insert = $this->db->insert('gallerys', $attr);
