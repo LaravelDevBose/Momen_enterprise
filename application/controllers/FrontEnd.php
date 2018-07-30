@@ -137,6 +137,14 @@ class FrontEnd extends CI_Controller {
 	}
 
 
+	/*=========== Md message Page=========*/
+	public function md_message_page()
+	{
+		$data['title']='Md. Message';
+		$data['page_path'] = 'frontEnd/message/md_message_page';
+		$this->load->view('frontEnd/master', $data);
+	}
+
 	/*========= Cart page============*/
 	// public function cart_page()
 	// {	

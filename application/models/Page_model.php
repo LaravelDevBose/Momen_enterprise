@@ -282,7 +282,7 @@ Class Page_model extends CI_Model{
 	//======== get limit video ==========
 	public function get_limt_video($limit)
 	{
-		$result = $this->db->limit($limit)->get('videos')->result();
+		$result = $this->db->order_by('id', 'desc')->limit($limit)->get('videos')->result();
 
 		if($result): return $result; else: return FALSE; endif;
 	}

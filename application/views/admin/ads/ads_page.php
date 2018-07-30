@@ -26,7 +26,7 @@
 					<td><?php echo $i++; ?></td>
 					<td><?= $ads->a_title; ?></td>
 					
-					<td style="width: 300px;"><img style="height: 200px; width: 100%; " src=" <?php echo base_url().$ads->image_path;  ?>" alt="Slider Image"></td>
+					<td style="width: 300px;"><img style="height: 60px; width: 60px; " src=" <?php echo base_url().$ads->image_path;  ?>" alt="Slider Image"></td>
 					
 					
 					<td>

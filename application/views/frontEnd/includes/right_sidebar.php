@@ -22,7 +22,7 @@
 						
 					</p>
 				</div>
-				<a href="<?= base_url(); ?>md_message" style="float: right;">Read More</a>
+				<a href="<?= base_url(); ?>md_message_page" style="float: right;">Read More</a>
 			</div>
 		</div>
 	</div>

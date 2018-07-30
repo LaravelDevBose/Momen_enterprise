@@ -20,7 +20,7 @@ $route['our_service'] = 'FrontEnd/our_service_page';
 $route['photo'] = 'FrontEnd/phote_gallary_page';
 $route['video'] = 'FrontEnd/video_gallary_page';
 $route['contact_us'] = 'FrontEnd/contacts_us_page';
-
+$route['md_message_page'] = 'FrontEnd/md_message_page';
 
 /*========== Admin Route List =============*/
 /*========== Admin Route List =============*/

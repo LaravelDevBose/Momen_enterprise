@@ -48,7 +48,7 @@
 
 						<div class="form-group" id="phone" style="display: none;">
 							<div class="col-lg-7 col-md-offset-3">
-								<input type="number" name="phone" class="form-control" placeholder="Phone Number">
+								<input type="text" name="phone" class="form-control" autocomplete="off" placeholder="Phone Number">
 								<span id="phone_error" class="text-danger text-semibold" style="display: none;">Phone Number Field is required.</span>
 							</div>
 							<div class="col-md-2">
@@ -66,7 +66,7 @@
 
 						<div class="form-group" id="email" style="display: none;">
 							<div class="col-lg-7 col-md-offset-3">
-								<input type="text" name="email" class="form-control" placeholder="Site Email Address">
+								<input type="text" name="email" class="form-control" autocomplete="off" placeholder="Site Email Address">
 								<span id="email_error" class="text-danger text-semibold" style="display: none;">Email Field is required.</span>
 							</div>
 							<div class="col-md-2">

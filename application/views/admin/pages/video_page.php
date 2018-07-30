@@ -42,7 +42,7 @@
 				<tr>
 					<td><?php echo $i++; ?></td>
 					<td>
-						<iframe allowfullscreen="" frameborder="0" mozallowfullscreen="" src="<?= $video->video_link;?>" webkitallowfullscreen=""></iframe>
+						<iframe allowfullscreen="" frameborder="0" mozallowfullscreen="" style="width: 90px; height: 60px;" src="<?= $video->video_link;?>" webkitallowfullscreen=""></iframe>
 					</td>
 					<td>
 						<ul class="icons-list">
