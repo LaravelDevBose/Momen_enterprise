@@ -10,7 +10,7 @@
 							$image = base_url().$md_image->value; 
 							if(!@getimagesize($image)){$image = base_url().'libs/upload_pic/admin_image/admin_defult.jpg' ; }
 						}?>
-						<img  class="img-fluid" src="<?= $image?>" alt="<?= $md_name->value; ?>" style="margin: 0 auto;">
+						<img  class="img-fluid" src="<?= $image?>" alt="<?= $md_name->value; ?>" style="margin: 0 auto; ">
 					</div>
 				</div>
 				<div style=" width: 65%; float: right;">
